@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Day02;
 
 /*
 Task 2: Page Source Validation

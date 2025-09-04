@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Day02;
 
 /*
 Task 4: Multiple Navigation and Verification

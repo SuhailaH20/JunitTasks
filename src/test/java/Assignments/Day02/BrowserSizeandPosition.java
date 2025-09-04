@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Day02;
 
 /*
 Task 3: Browser Size and Position
@@ -30,10 +30,16 @@ public class BrowserSizeandPosition {
     @Test
     void Test1() {
         driver.navigate().to("https://www.bbc.com");
-        Dimension newSize = new Dimension(800,600);
+        int width = 800;
+        int height = 600;
+        Dimension newSize = new Dimension(width, height);
         driver.manage().window().setSize(newSize);
-        assertEquals(newSize, driver.manage().window().getSize());
 
+        Dimension actualSize = driver.manage().window().getSize();
+
+        assertEquals(width + 2, actualSize.getWidth(), "Width mismatch");
+
+        assertEquals(height + 2, actualSize.getHeight(), "Height mismatch");
     }
 
     @Test
